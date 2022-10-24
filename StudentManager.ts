@@ -10,10 +10,15 @@ export class StudentManager {
         GroupManager.groups.forEach(group=>{
             this.students = [...group.stuOfGroup, ...this.students];
         })
+    }
+
+    static showAllStu(): void {
+        this.getAllStu();
         console.table(this.students);
     }
 
     static getTotalStudentNumber(): number {
+        this.getAllStu();
         return this.students.length;
     }
 

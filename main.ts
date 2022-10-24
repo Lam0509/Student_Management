@@ -49,7 +49,7 @@ while (!outMenu) {
     let number = readlineSync.question('Chọn chức năng:  ');
     switch (number) {
         case "1":
-            StudentManager.getAllStu();
+            StudentManager.showAllStu();
             break;
         case "2":
             let outMenuStu = false;
@@ -225,7 +225,7 @@ while (!outMenu) {
 
             break;
         case "0":
-            outMenu = true;
+            outMenu = true;4
             break;
     }
 }
